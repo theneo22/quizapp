@@ -1,0 +1,124 @@
+{
+    "questions": [
+        {
+            "question_number": "#1",
+            "question": "What is the capital of France?",
+            "answers": ["A. Paris", "B. Berlin", "C. Rome", "D. Madrid"],
+            "correct_answer": "A"
+        },
+        {
+            "question_number": "#2",
+            "question": "What is the capital of Germany?",
+            "answers": ["A. Paris", "B. Berlin ", "C. Rome", "D. Madrid"],
+            "correct_answer": "B"
+        },
+        {
+            "question_number": "#3",
+            "question": "What is the capital of Italy?",
+            "answers": ["A. Rome", "B. Berlin", "C. Paris", "D. Madrid"],
+            "correct_answer": "A"
+        },
+        {
+            "question_number": "#4",
+            "question": "What is the capital of Spain?",
+            "answers": ["A. Madrid", "B. Berlin", "C. Rome", "D. Paris"],
+            "correct_answer": "C"
+        },
+        {
+            "question_number": "#5",
+            "question": "What is the capital of the United Kingdom?",
+            "answers": ["A. London", "B. Berlin", "C. Rome", "D. Paris"],
+            "correct_answer": "A"
+        },
+        {
+            "question_number": "#6",
+            "question": "What is the capital of Portugal?",
+            "answers": ["A. Lisbon", "B. Berlin", "C. Rome", "D. Paris"],
+            "correct_answer": "A"
+        },
+        {
+            "question_number": "#7",
+            "question": "What is the capital of Greece?",
+            "answers": ["A. Athens", "B. Berlin", "C. Rome", "D. Paris"],
+            "correct_answer": "A"
+        },
+        {
+            "question_number": "#8",
+            "question": "What is the capital of Poland?",
+            "answers": ["A. Warsaw", "B. Berlin", "C. Rome", "D. Paris"],
+            "correct_answer": "A"
+        },
+        {
+            "question_number": "#9",
+            "question": "What is the capital of Sweden?",
+            "answers": ["A. Stockholm", "B. Berlin", "C. Rome", "D. Paris"],
+            "correct_answer": "A"
+        },
+        {
+            "question_number": "#10",
+            "question": "What is the capital of the Netherlands?",
+            "answers": ["A. Amsterdam", "B. Berlin", "C. Rome", "D. Paris"],
+            "correct_answer": "A"
+        },
+        {
+            "question_number": "#11",
+            "question": "What is the capital of Belgium?",
+            "answers": ["A. Brussels", "B. Berlin", "C. Rome", "D. Paris"],
+            "correct_answer": "A"
+        },
+        {
+            "question_number": "#12",
+            "question": "What is the capital of Norway?",
+            "answers": ["A. Oslo", "B. Berlin", "C. Rome", "D. Paris"],
+            "correct_answer": "A"
+        },
+        {
+            "question_number": "#13",
+            "question": "What is the capital of Austria?",
+            "answers": ["A. Vienna", "B. Berlin", "C. Rome", "D. Paris"],
+            "correct_answer": "A"
+        },
+        {
+            "question_number": "#14",
+            "question": "What is the capital of Switzerland?",
+            "answers": ["A. Bern", "B. Berlin", "C. Rome", "D. Paris"],
+            "correct_answer": "A"
+        },
+        {
+            "question_number": "#15",
+            "question": "What is the capital of Denmark?",
+            "answers": ["A. Copenhagen", "B. Berlin", "C. Rome", "D. Paris"],
+            "correct_answer": "A"
+        },
+        {
+            "question_number": "#16",
+            "question": "What is the capital of Finland?",
+            "answers": ["A. Helsinki", "B. Berlin", "C. Rome", "D. Paris"],
+            "correct_answer": "A"
+        },
+        {
+            "question_number": "#17",
+            "question": "What is the capital of Ireland?",
+            "answers": ["A. Dublin", "B. Berlin", "C. Rome", "D. Paris"],
+            "correct_answer": "A"
+        },
+        {
+            "question_number": "#18",
+            "question": "What is the capital of Hungary?",
+            "answers": ["A. Budapest", "B. Berlin", "C. Rome", "D. Paris"],
+            "correct_answer": "A"
+        },
+        {
+            "question_number": "#19",
+            "question": "What is the capital of Iceland?",
+            "answers": ["A. Reykjavik", "B. Berlin", "C. Rome", "D. Paris"],
+            "correct_answer": "A"
+        },
+        {
+            "question_number": "#20",
+            "question": "What is the capital of Luxembourg?",
+            "answers": ["A. Luxembourg City", "B. Berlin", "C. Rome", "D. Paris"],
+            "correct_answer": "A"
+        }
+    ]
+}

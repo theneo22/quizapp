@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS QuizApp Question</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="../static/style_questions.css">
+</head>
+
+<body>
+    <h2><a href="/">Homepage</a></h2>
+    <h2>Question Number: {{ question_number }}</h2>
+    <!-- <h2>Correct Answer: {{ question['correct_answer'] }}</h2> -->
+
+    <h2>Question {{ question['question_number'] }}</h2>
+    <p>{{ question['question'] }}</p>
+    <form>
+        {% for answer in question['answers'] %}
+        <label>
+            <input type="checkbox" name="{{ answer.0 }}" value="{{ loop.index }}">
+            {{ answer }}
+        </label><br>
+        {% endfor %}
+        <!-- <button type="submit">Submit</button> -->
+     </form>
+
+    <form method="POST" action="/question/{{ question_number }}" style="position: absolute;">
+        <button type="button" onclick="return validate(event);" >Submit</button>
+        <button type="submit">Next</button>
+    </form>
+    <!-- Container for message -->
+    <div id="message-container"></div>
+
+    <script>
+        function validate() {
+            event.preventDefault(); // Prevent the default form submission behavior
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            var checked = false;
+            var selectedCheckboxName = '';
+            checkboxes.forEach(function (checkbox) {
+                if (checkbox.checked) {
+                    checked = true;
+                    selectedCheckboxName += checkbox.name
+                    // alert("Selected checkbox ID: " + selectedCheckboxName)
+                }
+            });
+            if (!checked) {
+                var errorMessage = document.createElement('p');
+                errorMessage.className = 'error-message';
+                errorMessage.textContent = 'Please select an answer';
+                document.querySelector('#message-container').appendChild(errorMessage);
+                return false;
+            }
+
+            var correctAnswer = '{{question['correct_answer']}}'
+
+            // Compare selected checkbox name with the correct answer
+            var message = document.createElement('p');
+            if (selectedCheckboxName === correctAnswer) {
+                
+                message.className ='success-message';
+                message.textContent = 'Correct answer!';
+                document.querySelector('#message-container').appendChild(message);
+            } else {
+                // var errorMessage = document.createElement('p');
+                message.className = 'error-message';
+                message.textContent = "Incorrect answer. Correct answer: " + correctAnswer;
+                document.querySelector('#message-container').appendChild(message);
+            }
+            document.getElementById('#message-container').innerHTML = '';
+            return false;
+        }
+    </script>
+
+</body>
+
+</html>
